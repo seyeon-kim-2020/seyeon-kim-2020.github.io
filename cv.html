@@ -15,31 +15,51 @@
     }
 
     header {
-      text-align: center;
-      margin-top: 60px;
+      height: 180px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0;
     }
 
     header h1 {
+      height: 40px;
+      line-height: 40px;
       font-size: 32px;
-      margin-bottom: 40px;
       font-weight: normal;
+      margin: 0 0 10px;
       color: #8C1515;
     }
 
     nav {
-      text-align: center;
-      margin-bottom: 40px;
+      height: 30px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin: 0 0 10px;
     }
 
     nav a {
       text-decoration: none;
       color: #8C1515;
-      margin: 0 20px;
-      font-size: 16px;
+      display: inline-block;
     }
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    h2.page-title {
+      height: 30px;
+      line-height: 30px;
+      font-size: 22px;
+      font-style: italic;
+      text-align: center;
+      color: #8C1515;
+      margin: 0;
     }
 
     main {
@@ -47,13 +67,6 @@
       margin: 0 auto;
       padding: 0 30px 60px;
       text-align: center;
-    }
-
-    h2 {
-      font-size: 22px;
-      font-style: italic;
-      margin-bottom: 30px;
-      color: #8C1515;
     }
 
     iframe {
@@ -72,10 +85,10 @@
       <a href="cv.html">CV</a>
       <a href="research.html">Research</a>
     </nav>
+    <h2 class="page-title">CV</h2>
   </header>
 
   <main>
-    <h2>Curriculum Vitae</h2>
     <iframe src="SeYeonKim_CV.pdf"></iframe>
   </main>
 </body>
