@@ -3,8 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <title>Seyeon Kim</title>
-  <meta name="description" content="Her Name is a Ph.D. candidate on the 2025 academic job market. Research in economics, labor, and inequality." />
+  <meta name="description" content="Seyeon Kim is a Ph.D. candidate on the 2025 academic job market. Research in entrepreneurship, labor, and startups." />
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Minimal CSS for layout & style */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0 20px;
+      color: #222;
+      background-color: #fefefe;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #0066cc;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      padding-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    header img.profile-photo {
+      width: 180px;
+      height: auto;
+      border-radius: 4px; /* slight rounding */
+      filter: brightness(1.2);
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    header div.intro-text {
+      max-width: 600px;
+    }
+    header div.intro-text h1 {
+      margin: 0 0 10px 0;
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 1.1;
+    }
+    header div.intro-text p {
+      margin: 6px 0;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+    header div.intro-text p strong {
+      color: #0066cc;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto 80px;
+      padding: 0 10px;
+    }
+    main section h2 {
+      font-weight: 700;
+      font-size: 1.8rem;
+      margin-bottom: 18px;
+      border-bottom: 2px solid #0066cc;
+      padding-bottom: 6px;
+      max-width: fit-content;
+    }
+    main section p {
+      margin-bottom: 18px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      header img.profile-photo {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+      }
+      header div.intro-text {
+        max-width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
   <nav>
@@ -12,20 +110,25 @@
     <a href="cv.html">CV</a>
     <a href="research.html">Research</a>
   </nav>
-  <main>
-    <img src="assets/SeyeonKim.jpg" alt="Photo of Her Name" class="profile-photo" />
-    <h1>Seyeon Kim</h1>
-    <p>Hi, welcome to my website! I am Seyeon, Ph.D. Candidate in Organization Behavior (Macro) at Stanford Graduate School of Business</p>
-    <p>Broadly speaking, my research interests lie at the intersection of Entrepreneurship and Labor Markets, with a particular focus startups. </p>
-    <p><strong>I am on the 2025-2026 job market (AOM Sun, July 27, 08:30-10:00, Bella Center: Hall B-B3-m7)</strong></p>
 
+  <header>
+    <img src="assets/SeyeonKim.jpg" alt="Photo of Seyeon Kim" class="profile-photo" />
+    <div class="intro-text">
+      <h1>Seyeon Kim</h1>
+      <p>Hi, welcome to my website! I am Seyeon, Ph.D. Candidate in Organization Behavior (Macro) at Stanford Graduate School of Business.</p>
+      <p>Broadly speaking, my research interests lie at the intersection of Entrepreneurship and Labor Markets, with a particular focus on startups.</p>
+      <p><strong>I am on the 2025-2026 job market (AOM Sun, July 27, 08:30-10:00, Bella Center: Hall B-B3-m7)</strong></p>
+    </div>
+  </header>
+
+  <main>
     <section>
       <h2>Research Summary</h2>
       <p>
-In my research, I explore the dual reality of startups as engines of innovation and growth, yet often constrained by limited resources and uncertain futures. My dissertation takes this dual reality seriously, by engaging with the challenges startups face as employers, as well as the barriers that entrepreneurs and early-stage employees encounter when transitioning into traditional paid employment.
+        In my research, I explore the dual reality of startups as engines of innovation and growth, yet often constrained by limited resources and uncertain futures. My dissertation takes this dual reality seriously, by engaging with the challenges startups face as employers, as well as the barriers that entrepreneurs and early-stage employees encounter when transitioning into traditional paid employment.
       </p>
       <p>
-A distinctive feature of my dissertation is its use of proprietary data that I independently acquired from an online job platform in South Korea, a key player in the country’s startup labor market. I also use large-scale labor data from Revelio Labs and online experiments to uncover how entrepreneurship is evaluated and how to improve outcomes for both startups and workers.
+        A distinctive feature of my dissertation is its use of proprietary data that I independently acquired from an online job platform in South Korea, a key player in the country’s startup labor market. I also use large-scale labor data from Revelio Labs and online experiments to uncover how entrepreneurship is evaluated and how to improve outcomes for both startups and workers.
       </p>
     </section>
   </main>
