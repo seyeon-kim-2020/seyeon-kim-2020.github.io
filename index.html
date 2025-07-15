@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <title>Seyeon Kim</title>
-  <meta name="description" content="Seyeon Kim | Academic Job Market" />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <meta name="description" content="Seyeon Kim" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Libre Baskerville', serif;
@@ -23,22 +23,42 @@
       font-size: 32px;
       margin-bottom: 40px;
       font-weight: normal;
+      line-height: 1.2;
     }
 
     nav {
       text-align: center;
       margin-bottom: 40px;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 1.5;
     }
 
     nav a {
       text-decoration: none;
       color: #000;
       margin: 0 20px;
-      font-size: 16px;
+      vertical-align: middle;
+      font-family: inherit;
+      font-size: inherit;
+      font-weight: inherit;
+      line-height: inherit;
+      display: inline-block;
     }
 
     nav a:hover {
       text-decoration: underline;
+    }
+
+    /* New: Home below the tabs styling */
+    .below-tabs {
+      text-align: center;
+      font-family: 'Libre Baskerville', serif;
+      font-size: 16px;
+      font-weight: normal;
+      margin-top: 30px; /* vertical space below tabs */
+      margin-bottom: 40px; /* keep same spacing as nav bottom */
     }
 
     main {
@@ -81,6 +101,11 @@
       <a href="cv.html">CV</a>
       <a href="research.html">Research</a>
     </nav>
+
+    <!-- Home below tabs, same font/spacing as other nav links -->
+    <div class="below-tabs">
+      <a href="index.html">Home</a>
+    </div>
   </header>
 
   <main>
