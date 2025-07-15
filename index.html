@@ -30,21 +30,14 @@
     nav {
       text-align: center;
       margin-bottom: 40px;
-      font-family: 'Libre Baskerville', serif;
       font-size: 16px;
       font-weight: normal;
-      line-height: 1.5;
     }
 
     nav a {
       text-decoration: none;
-      color: #8C1515; /* Stanford Cardinal Red */
+      color: #8C1515;
       margin: 0 20px;
-      vertical-align: middle;
-      font-family: inherit;
-      font-size: inherit;
-      font-weight: inherit;
-      line-height: inherit;
       display: inline-block;
     }
 
@@ -57,7 +50,7 @@
       font-style: italic;
       margin-bottom: 30px;
       text-align: center;
-      color: #8C1515; /* Stanford Cardinal Red */
+      color: #8C1515;
     }
 
     main {
@@ -86,7 +79,16 @@
     }
 
     strong {
-      color: #8C1515; /* Stanford Cardinal Red */
+      color: #8C1515;
+    }
+
+    a.inline-link {
+      color: #8C1515;
+      text-decoration: none;
+    }
+
+    a.inline-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -104,7 +106,13 @@
   <main>
     <img src="assets/SeyeonKim.jpg" alt="Photo of Seyeon Kim" class="profile-photo" />
     <div class="intro-text">
-      <p>Hi, welcome to my website! I am Seyeon, Ph.D. Candidate in Organization Behavior (Macro) at Stanford Graduate School of Business.</p>
+      <p>
+        Hi, welcome to my website! I am Seyeon,
+        <a class="inline-link" href="https://www.gsb.stanford.edu/programs/phd/academic-experience/students/seyeon-kim" target="_blank" rel="noopener noreferrer">
+          Ph.D. Candidate in Organization Behavior (Macro)
+        </a>
+        at Stanford Graduate School of Business.
+      </p>
       <p>Broadly speaking, my research interests lie at the intersection of Entrepreneurship and Labor Markets, with a particular focus on startups.</p>
       <p><strong>I am on the 2025–2026 job market (AOM Sun, July 27, 08:30–10:00, Bella Center: Hall B-B3-m7)</strong></p>
 
