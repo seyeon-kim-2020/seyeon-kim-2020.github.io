@@ -4,110 +4,119 @@
   <meta charset="UTF-8">
   <title>Seyeon Kim</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- Google Font used on kyliehwang.com -->
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-
   <style>
     body {
       font-family: 'Libre Baskerville', serif;
-      margin: 60px auto;
-      max-width: 700px;
-      padding: 0 20px;
-      background-color: #ffffff;
+      background-color: #fff;
       color: #111;
-      font-size: 16px;
-      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      font-weight: normal;
     }
 
     nav {
+      text-align: center;
       margin-bottom: 40px;
     }
 
     nav a {
       text-decoration: none;
       color: #000;
-      margin-right: 25px;
-      font-weight: normal;
+      margin: 0 20px;
+      font-size: 16px;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    .container {
+    .main-container {
       display: flex;
+      justify-content: center;
       align-items: flex-start;
-      gap: 30px;
+      padding: 0 40px 60px;
+      max-width: 1100px;
+      margin: 0 auto;
+      gap: 40px;
     }
 
     .profile-photo {
-      max-width: 180px;
+      max-width: 350px;
+      width: 100%;
       height: auto;
       object-fit: cover;
-      filter: brightness(1.15); /* brighten image */
+      filter: brightness(1.15);
     }
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-      font-weight: normal;
+    .text-section {
+      flex: 1;
+    }
+
+    .text-section p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin-bottom: 20px;
     }
 
     h2 {
-      font-size: 22px;
-      margin-top: 50px;
+      font-size: 20px;
+      margin-top: 40px;
       margin-bottom: 15px;
       font-weight: normal;
     }
 
-    .text-block {
-      flex: 1;
-    }
-
-    strong {
-      font-weight: bold;
-    }
-
     @media screen and (max-width: 768px) {
-      .container {
+      .main-container {
         flex-direction: column;
-        align-items: center;
+        padding: 0 20px;
+        gap: 20px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 10px 10px;
       }
 
       .profile-photo {
         max-width: 100%;
-      }
-
-      nav {
-        text-align: center;
       }
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <h1>Seyeon Kim</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="cv.html">CV</a>
+      <a href="research.html">Research</a>
+    </nav>
+  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="research.html">Research</a>
-  </nav>
-
-  <div class="container">
-    <img src="assets/SeyeonKim.jpg" alt="Photo of Seyeon Kim" class="profile-photo" />
-    <div class="text-block">
-      <h1>Seyeon Kim</h1>
+  <div class="main-container">
+    <img src="assets/SeyeonKim.jpg" alt="Seyeon Kim" class="profile-photo">
+    <div class="text-section">
       <p>Hi, welcome to my website! I am Seyeon, Ph.D. Candidate in Organizational Behavior (Macro) at Stanford Graduate School of Business.</p>
       <p>Broadly speaking, my research interests lie at the intersection of entrepreneurship and labor markets, with a particular focus on startups.</p>
       <p><strong>I am on the 2025–2026 job market</strong> (AOM Sun, July 27, 08:30–10:00, Bella Center: Hall B-B3-m7)</p>
+
+      <h2>Research Summary</h2>
+      <p>In my research, I explore the dual reality of startups as engines of innovation and growth, yet often constrained by limited resources and uncertain futures. My dissertation takes this dual reality seriously, by engaging with the challenges startups face as employers, as well as the barriers that entrepreneurs and early-stage employees encounter when transitioning into traditional paid employment.</p>
+
+      <p>A distinctive feature of my dissertation is its use of proprietary data that I independently acquired from an online job platform in South Korea, a key player in the country’s startup labor market. I also use large-scale labor data from Revelio Labs and online experiments to uncover how entrepreneurship is evaluated and how to improve outcomes for both startups and workers.</p>
     </div>
   </div>
-
-  <h2>Research Summary</h2>
-  <p>In my research, I explore the dual reality of startups as engines of innovation and growth, yet often constrained by limited resources and uncertain futures. My dissertation takes this dual reality seriously, by engaging with the challenges startups face as employers, as well as the barriers that entrepreneurs and early-stage employees encounter when transitioning into traditional paid employment.</p>
-
-  <p>A distinctive feature of my dissertation is its use of proprietary data that I independently acquired from an online job platform in South Korea, a key player in the country’s startup labor market. I also use large-scale labor data from Revelio Labs and online experiments to uncover how entrepreneurship is evaluated and how to improve outcomes for both startups and workers.</p>
-
 </body>
 </html>
