@@ -17,9 +17,12 @@ nav a {
 }
 .profile-photo {
   width: 150px;
-  border-radius: 50%;
-  display: block;
-  margin: 1em auto;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+  border-radius: 0; /* remove rounded corners */
+  filter: brightness(1.2); /* increase brightness */
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* optional: subtle shadow */
 }
 h1 {
   text-align: center;
